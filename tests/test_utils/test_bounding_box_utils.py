@@ -9,8 +9,8 @@ from torch import allclose, float32, isclose, tensor
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
 from yolo import Config, NMSConfig, create_model
-from yolo.config.config import AnchorConfig
-from yolo.utils.bounding_box_utils import (
+from vision_py.models.YOLOV9.YOLO.yolo.config.config import AnchorConfig
+from vision_py.models.YOLOV9.YOLO.yolo.utils.bounding_box_utils import (
     Anc2Box,
     Vec2Box,
     bbox_nms,

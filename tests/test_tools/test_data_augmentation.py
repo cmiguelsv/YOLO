@@ -8,7 +8,7 @@ from torchvision.transforms import functional as TF
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
 
-from yolo.tools.data_augmentation import (
+from vision_py.models.YOLOV9.YOLO.yolo.tools.data_augmentation import (
     AugmentationComposer,
     HorizontalFlip,
     Mosaic,

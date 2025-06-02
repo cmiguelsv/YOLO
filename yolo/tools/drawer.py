@@ -6,9 +6,9 @@ import torch
 from PIL import Image, ImageDraw, ImageFont
 from torchvision.transforms.functional import to_pil_image
 
-from yolo.config.config import ModelConfig
-from yolo.model.yolo import YOLO
-from yolo.utils.logger import logger
+from vision_py.models.YOLOV9.YOLO.yolo.config.config import ModelConfig
+from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import YOLO
+from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
 
 
 def draw_bboxes(
@@ -74,7 +74,7 @@ def draw_model(*, model_cfg: ModelConfig = None, model: YOLO = None, v7_base=Fal
     from graphviz import Digraph
 
     if model_cfg:
-        from yolo.model.yolo import create_model
+        from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import create_model
 
         model = create_model(model_cfg)
     elif model is None:

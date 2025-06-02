@@ -6,8 +6,8 @@ from torch.utils.data import DataLoader
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
 
-from yolo.config.config import Config
-from yolo.tools.data_loader import StreamDataLoader, create_dataloader
+from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
+from vision_py.models.YOLOV9.YOLO.yolo.tools.data_loader import StreamDataLoader, create_dataloader
 
 
 def test_create_dataloader_cache(train_cfg: Config):

@@ -13,10 +13,10 @@ from torch import Tensor, no_grad
 from torch.optim import Optimizer
 from torch.optim.lr_scheduler import LambdaLR, SequentialLR, _LRScheduler
 
-from yolo.config.config import IDX_TO_ID, NMSConfig, OptimizerConfig, SchedulerConfig
-from yolo.model.yolo import YOLO
-from yolo.utils.bounding_box_utils import Anc2Box, Vec2Box, bbox_nms, transform_bbox
-from yolo.utils.logger import logger
+from vision_py.models.YOLOV9.YOLO.yolo.config.config import IDX_TO_ID, NMSConfig, OptimizerConfig, SchedulerConfig
+from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import YOLO
+from vision_py.models.YOLOV9.YOLO.yolo.utils.bounding_box_utils import Anc2Box, Vec2Box, bbox_nms, transform_bbox
+from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
 
 
 def lerp(start: float, end: float, step: Union[int, float], total: int = 1):

@@ -9,8 +9,8 @@ from omegaconf import OmegaConf
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
 
-from yolo.config.config import Config
-from yolo.model.yolo import YOLO, create_model
+from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
+from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import YOLO, create_model
 
 config_path = "../../yolo/config"
 config_name = "config"

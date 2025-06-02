@@ -9,10 +9,10 @@ from hydra import compose, initialize
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
 
-from yolo.config.config import Config
-from yolo.model.yolo import create_model
-from yolo.tools.loss_functions import DualLoss, create_loss_function
-from yolo.utils.bounding_box_utils import Vec2Box
+from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
+from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import create_model
+from vision_py.models.YOLOV9.YOLO.yolo.tools.loss_functions import DualLoss, create_loss_function
+from vision_py.models.YOLOV9.YOLO.yolo.utils.bounding_box_utils import Vec2Box
 
 
 @pytest.fixture
