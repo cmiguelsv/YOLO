@@ -16,7 +16,7 @@ from yolo import (
     create_dataloader,
     create_model,
 )
-from vision_py.models.YOLOV9.YOLO.yolo.utils.model_utils import get_device
+from vision_py.models.YOLO.YOLO.yolo.utils.model_utils import get_device
 
 
 @hydra.main(config_path="config", config_name="config", version_base=None)

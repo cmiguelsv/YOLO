@@ -5,8 +5,8 @@ from typing import Optional
 import requests
 from rich.progress import BarColumn, Progress, TextColumn, TimeRemainingColumn
 
-from vision_py.models.YOLOV9.YOLO.yolo.config.config import DatasetConfig
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
+from vision_py.models.YOLO.YOLO.yolo.config.config import DatasetConfig
+from vision_py.models.YOLO.YOLO.yolo.utils.logger import logger
 
 
 def download_file(url, destination: Path):

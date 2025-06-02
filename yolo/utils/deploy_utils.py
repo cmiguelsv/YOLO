@@ -3,9 +3,9 @@ from pathlib import Path
 import torch
 from torch import Tensor
 
-from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
-from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import create_model
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
+from vision_py.models.YOLO.YOLO.yolo.config.config import Config
+from vision_py.models.YOLO.YOLO.yolo.model.yolo import create_model
+from vision_py.models.YOLO.YOLO.yolo.utils.logger import logger
 
 
 class FastModelLoader:

@@ -7,8 +7,8 @@ from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 import torch
 
-from vision_py.models.YOLOV9.YOLO.yolo.tools.data_conversion import discretize_categories
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
+from vision_py.models.YOLO.YOLO.yolo.tools.data_conversion import discretize_categories
+from vision_py.models.YOLO.YOLO.yolo.utils.logger import logger
 
 
 def locate_label_paths(dataset_path: Path, phase_name: Path) -> Tuple[Path, Path]:

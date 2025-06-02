@@ -35,11 +35,11 @@ from torch import Tensor
 from torch.nn import ModuleList
 from typing_extensions import override
 
-from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config, YOLOLayer
-from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import YOLO
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
-from vision_py.models.YOLOV9.YOLO.yolo.utils.model_utils import EMA
-from vision_py.models.YOLOV9.YOLO.yolo.utils.solver_utils import make_ap_table
+from vision_py.models.YOLO.YOLO.yolo.config.config import Config, YOLOLayer
+from vision_py.models.YOLO.YOLO.yolo.model.yolo import YOLO
+from vision_py.models.YOLO.YOLO.yolo.utils.logger import logger
+from vision_py.models.YOLO.YOLO.yolo.utils.model_utils import EMA
+from vision_py.models.YOLO.YOLO.yolo.utils.solver_utils import make_ap_table
 
 
 # TODO: should be moved to correct position

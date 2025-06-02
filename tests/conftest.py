@@ -10,10 +10,10 @@ project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
 from yolo import Anc2Box, Config, Vec2Box, create_converter, create_model
-from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import YOLO
-from vision_py.models.YOLOV9.YOLO.yolo.tools.data_loader import StreamDataLoader, create_dataloader
-from vision_py.models.YOLOV9.YOLO.yolo.tools.dataset_preparation import prepare_dataset
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logging_utils import set_seed, setup
+from vision_py.models.YOLO.YOLO.yolo.model.yolo import YOLO
+from vision_py.models.YOLO.YOLO.yolo.tools.data_loader import StreamDataLoader, create_dataloader
+from vision_py.models.YOLO.YOLO.yolo.tools.dataset_preparation import prepare_dataset
+from vision_py.models.YOLO.YOLO.yolo.utils.logging_utils import set_seed, setup
 
 
 def pytest_configure(config):

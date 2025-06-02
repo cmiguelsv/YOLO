@@ -5,9 +5,9 @@ import torch.nn.functional as F
 from torch import Tensor, nn
 from torch.nn import BCEWithLogitsLoss
 
-from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config, LossConfig
-from vision_py.models.YOLOV9.YOLO.yolo.utils.bounding_box_utils import BoxMatcher, Vec2Box, calculate_iou
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
+from vision_py.models.YOLO.YOLO.yolo.config.config import Config, LossConfig
+from vision_py.models.YOLO.YOLO.yolo.utils.bounding_box_utils import BoxMatcher, Vec2Box, calculate_iou
+from vision_py.models.YOLO.YOLO.yolo.utils.logger import logger
 
 
 class BCELoss(nn.Module):

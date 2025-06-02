@@ -7,7 +7,7 @@ from torch import nn
 
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
-from vision_py.models.YOLOV9.YOLO.yolo.utils.module_utils import (
+from vision_py.models.YOLO.YOLO.yolo.utils.module_utils import (
     auto_pad,
     create_activation_function,
     divide_into_chunks,

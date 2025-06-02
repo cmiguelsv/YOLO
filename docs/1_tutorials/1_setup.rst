@@ -13,7 +13,7 @@ Next, create the progress logger to handle the output and progress bar. This cla
 
          import hydra
          from yolo import ProgressLogger
-         from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
+         from vision_py.models.YOLO.YOLO.yolo.config.config import Config
 
          @hydra.main(config_path="config", config_name="config", version_base=None)
          def main(cfg: Config):
@@ -25,7 +25,7 @@ Next, create the progress logger to handle the output and progress bar. This cla
 
          from hydra import compose, initialize
          from yolo import ProgressLogger
-         from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
+         from vision_py.models.YOLO.YOLO.yolo.config.config import Config
 
          with initialize(config_path="config", version_base=None):
              cfg = compose(config_name="config", overrides=["task=train", "model=v9-c"])

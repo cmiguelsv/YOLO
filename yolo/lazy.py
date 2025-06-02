@@ -7,9 +7,9 @@ from lightning import Trainer
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
-from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
-from vision_py.models.YOLOV9.YOLO.yolo.tools.solver import InferenceModel, TrainModel, ValidateModel
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logging_utils import setup
+from vision_py.models.YOLO.YOLO.yolo.config.config import Config
+from vision_py.models.YOLO.YOLO.yolo.tools.solver import InferenceModel, TrainModel, ValidateModel
+from vision_py.models.YOLO.YOLO.yolo.utils.logging_utils import setup
 
 
 @hydra.main(config_path="config", config_name="config", version_base=None)

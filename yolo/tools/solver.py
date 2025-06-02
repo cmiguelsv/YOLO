@@ -4,13 +4,13 @@ from pathlib import Path
 from lightning import LightningModule
 from torchmetrics.detection import MeanAveragePrecision
 
-from vision_py.models.YOLOV9.YOLO.yolo.config.config import Config
-from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import create_model
-from vision_py.models.YOLOV9.YOLO.yolo.tools.data_loader import create_dataloader
-from vision_py.models.YOLOV9.YOLO.yolo.tools.drawer import draw_bboxes
-from vision_py.models.YOLOV9.YOLO.yolo.tools.loss_functions import create_loss_function
-from vision_py.models.YOLOV9.YOLO.yolo.utils.bounding_box_utils import create_converter, to_metrics_format
-from vision_py.models.YOLOV9.YOLO.yolo.utils.model_utils import PostProcess, create_optimizer, create_scheduler
+from vision_py.models.YOLO.YOLO.yolo.config.config import Config
+from vision_py.models.YOLO.YOLO.yolo.model.yolo import create_model
+from vision_py.models.YOLO.YOLO.yolo.tools.data_loader import create_dataloader
+from vision_py.models.YOLO.YOLO.yolo.tools.drawer import draw_bboxes
+from vision_py.models.YOLO.YOLO.yolo.tools.loss_functions import create_loss_function
+from vision_py.models.YOLO.YOLO.yolo.utils.bounding_box_utils import create_converter, to_metrics_format
+from vision_py.models.YOLO.YOLO.yolo.utils.model_utils import PostProcess, create_optimizer, create_scheduler
 
 
 class BaseModel(LightningModule):

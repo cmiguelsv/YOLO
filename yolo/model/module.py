@@ -6,8 +6,8 @@ from einops import rearrange
 from torch import Tensor, nn
 from torch.nn.common_types import _size_2_t
 
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
-from vision_py.models.YOLOV9.YOLO.yolo.utils.module_utils import auto_pad, create_activation_function, round_up
+from vision_py.models.YOLO.YOLO.yolo.utils.logger import logger
+from vision_py.models.YOLO.YOLO.yolo.utils.module_utils import auto_pad, create_activation_function, round_up
 
 
 # ----------- Basic Class ----------- #

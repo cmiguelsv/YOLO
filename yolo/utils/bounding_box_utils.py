@@ -7,9 +7,9 @@ from torch import Tensor, tensor
 from torchmetrics.detection import MeanAveragePrecision
 from torchvision.ops import batched_nms
 
-from vision_py.models.YOLOV9.YOLO.yolo.config.config import AnchorConfig, MatcherConfig, NMSConfig
-from vision_py.models.YOLOV9.YOLO.yolo.model.yolo import YOLO
-from vision_py.models.YOLOV9.YOLO.yolo.utils.logger import logger
+from vision_py.models.YOLO.YOLO.yolo.config.config import AnchorConfig, MatcherConfig, NMSConfig
+from vision_py.models.YOLO.YOLO.yolo.model.yolo import YOLO
+from vision_py.models.YOLO.YOLO.yolo.utils.logger import logger
 
 
 def calculate_iou(bbox1, bbox2, metrics="iou") -> Tensor:

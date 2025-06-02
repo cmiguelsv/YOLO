@@ -12,7 +12,7 @@ def get_layer_map():
     ensuring they are relevant neural network layers.
     """
     layer_map = {}
-    from vision_py.models.YOLOV9.YOLO.yolo.model import module
+    from vision_py.models.YOLO.YOLO.yolo.model import module
 
     for name, obj in inspect.getmembers(module, inspect.isclass):
         if issubclass(obj, nn.Module) and obj is not nn.Module:
